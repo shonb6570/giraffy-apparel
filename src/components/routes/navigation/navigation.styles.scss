@@ -1,0 +1,56 @@
+/* ============================================= */
+/*         Nav Bar Styles                        */
+/* ============================================= */
+
+// variables
+
+$tablet: 577px;
+$desktop-sm: 992px;
+$desktop-med: 1200px;
+$desktop-lg: 1400px;
+$desktop-xl: 1600px;
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 80px;
+    align-items: center;
+    @media only screen and (min-width: $desktop-xl) {
+        max-width: 1600px;
+    }
+}
+
+.nav-borders {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 37px;
+}
+
+.nav-border-right {
+    margin-left: 1rem;
+}
+.nav-border-left {
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 300px;
+}
+
+.nav-links-container {
+    display: flex;
+    align-content: space-between;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.nav-link {
+    display: inline-flex;
+    padding: 0 0.8rem;
+    text-decoration: none;
+    color: black;
+}
