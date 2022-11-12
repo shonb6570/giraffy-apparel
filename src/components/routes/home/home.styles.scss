@@ -1,0 +1,15 @@
+/* ============================================= */
+/*         Home Page Base Styles                 */
+/* ============================================= */
+
+.main-content-wrapper {
+    position: relative;
+}
+
+.site-bg {
+    margin-top: 2rem;
+    overflow-x: hidden;
+    background-image: url("../../../assets/bg-image.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

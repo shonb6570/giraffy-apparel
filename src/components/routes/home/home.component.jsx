@@ -1,30 +1,36 @@
 import CategoryDirectory from "../../../components/category-directory/category-directory.component";
+import "./home.styles.scss";
 
 const categories = [
     {
         id: 1,
-        title: "hats",
-        imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+        title: "new",
+        imageUrl:
+            "https://images.pexels.com/photos/605206/pexels-photo-605206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
         id: 2,
-        title: "jackets",
-        imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+        title: "womens",
+        imageUrl:
+            "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
         id: 3,
-        title: "sneakers",
-        imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+        title: "mens",
+        imageUrl:
+            "https://images.pexels.com/photos/3206079/pexels-photo-3206079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
         id: 4,
-        title: "womens",
-        imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
+        title: "bags",
+        imageUrl:
+            "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
         id: 5,
-        title: "mens",
-        imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+        title: "accessories",
+        imageUrl:
+            "https://images.pexels.com/photos/1639729/pexels-photo-1639729.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
     },
 ];
 

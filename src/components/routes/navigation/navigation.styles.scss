@@ -13,11 +13,20 @@ $desktop-xl: 1600px;
 .navigation {
     display: flex;
     justify-content: center;
-    margin: 40px auto 80px;
+    margin: 0 auto;
     align-items: center;
+    max-width: 1600px;
+    height: 275px;
     @media only screen and (min-width: $desktop-xl) {
         max-width: 1600px;
     }
+}
+.nav-bar-wrapper {
+    width: 1600px;
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    display: flex;
 }
 
 .nav-borders {
@@ -26,7 +35,7 @@ $desktop-xl: 1600px;
     height: 34px;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 40%;
     margin-top: 37px;
 }
 
