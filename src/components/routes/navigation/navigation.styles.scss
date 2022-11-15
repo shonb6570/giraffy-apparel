@@ -2,13 +2,7 @@
 /*         Nav Bar Styles                        */
 /* ============================================= */
 
-// variables
-
-$tablet: 577px;
-$desktop-sm: 992px;
-$desktop-med: 1200px;
-$desktop-lg: 1400px;
-$desktop-xl: 1600px;
+@import "../../../variables.scss";
 
 .navigation {
     display: flex;
@@ -22,39 +16,67 @@ $desktop-xl: 1600px;
     }
 }
 .nav-bar-wrapper {
-    width: 1600px;
+    width: 100%;
+    max-width: 1660px;
     position: absolute;
     z-index: 1;
     align-items: center;
     display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: $desktop-sm) {
+        flex-direction: row;
+    }
 }
 
 .nav-borders {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    width: 40%;
-    margin-top: 37px;
+    display: none;
+
+    @media only screen and (min-width: $desktop-sm) {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 37px;
+    }
 }
 
 .nav-border-right {
-    margin-left: 1rem;
+    display: block;
+    width: 100%;
+    @media only screen and (min-width: $desktop-sm) {
+        display: flex;
+        margin-left: 1rem;
+    }
 }
 .nav-border-left {
     margin-right: 1rem;
 }
 
 .logo {
-    width: 300px;
+    margin: 0 auto;
+    width: 220px;
+    @media only screen and (min-width: $tablet) {
+        width: 300px;
+    }
 }
 
 .nav-links-container {
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
     margin-left: auto;
-    margin-right: 2rem;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 20px;
+
+    @media only screen and (min-width: $desktop-sm) {
+        display: flex;
+        align-content: space-between;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: 2rem;
+    }
 }
 
 .nav-link {

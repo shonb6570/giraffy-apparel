@@ -2,14 +2,26 @@
 /*         Home Page Base Styles                 */
 /* ============================================= */
 
+@import "../../../variables.scss";
+
 .main-content-wrapper {
     position: relative;
 }
 
 .site-bg {
-    margin-top: 2rem;
-    overflow-x: hidden;
-    background-image: url("../../../assets/bg-image.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
+    @media only screen and (min-width: $tablet) {
+        overflow-x: hidden;
+        background-image: url("../../../assets/bg-image2.svg");
+        background-size: 1600px;
+        background-repeat: no-repeat;
+        margin: 2rem auto 0;
+    }
+
+    @media only screen and (min-width: $desktop-xl) {
+        overflow-x: hidden;
+        background-size: 1598px;
+        background-repeat: no-repeat;
+        width: 1566px;
+        margin: 2rem auto 0;
+    }
 }
