@@ -6,22 +6,22 @@
 
 .main-content-wrapper {
     position: relative;
+    overflow-x: hidden;
 }
 
 .site-bg {
     @media only screen and (min-width: $tablet) {
         overflow-x: hidden;
         background-image: url("../../../assets/bg-image2.svg");
-        background-size: 1600px;
+        background-size: 1800px;
         background-repeat: no-repeat;
         margin: 2rem auto 0;
     }
 
     @media only screen and (min-width: $desktop-xl) {
-        overflow-x: hidden;
-        background-size: 1598px;
+        background-size: 1900px;
         background-repeat: no-repeat;
-        width: 1566px;
+        width: 1800px;
         margin: 2rem auto 0;
     }
 }
