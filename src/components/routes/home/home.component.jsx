@@ -24,8 +24,8 @@ const categories = [
         id: 3,
         title: "mens",
         copyOne: "New Styles",
-        copyTwo: "to",
-        copyThree: "Make You Smile",
+        copyTwo: "to Make",
+        copyThree: "You Smile",
         imageUrl:
             "https://images.pexels.com/photos/3206079/pexels-photo-3206079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
