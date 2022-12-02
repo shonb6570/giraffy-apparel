@@ -1,0 +1,89 @@
+@import "../../../colors.scss";
+
+.giraffy-icon {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    background-image: url(../../../assets/giraffy-icon.svg);
+    background-repeat: no-repeat;
+}
+
+.footer-container {
+    border-top: 8px solid $flame;
+    background-color: $mine-shaft;
+    width: 100%;
+    display: flex;
+}
+
+.footer-content-wrapper {
+    width: 1600px;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: row;
+    display: flex;
+}
+
+.footer-logo {
+    background-image: url(../../../assets/footer-logo.svg);
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 100px;
+    margin: 40px 0;
+}
+
+.footer-brand-title {
+    color: $flame;
+    font-size: 48px;
+    display: flex;
+
+    p {
+        margin-top: 64px;
+        margin-bottom: 10px;
+    }
+}
+
+.footer-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+}
+.footer-nav-links {
+    display: flex;
+    flex-direction: row;
+    color: $flame;
+
+    .footer-nav-link {
+        padding: 8px 10px;
+    }
+}
+
+.footer-hr-horizontal {
+    height: 1px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.footer-hr-verticle {
+    height: 20px;
+    width: 1px;
+    display: flex;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 40px;
+    background-image: url(../../../assets/twitter.svg);
+    background-repeat: no-repeat;
+    padding: 0 15px;
+}
+
+.linkedin {
+    padding-right: 0;
+}
