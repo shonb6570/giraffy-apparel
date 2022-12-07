@@ -1,13 +1,13 @@
-.directory-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+@import "../../variables.scss";
 
 .directory-container {
-    max-width: 1600px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    @media only screen and (min-width: $desktop-xl) {
+        max-width: 1600px;
+    }
 }

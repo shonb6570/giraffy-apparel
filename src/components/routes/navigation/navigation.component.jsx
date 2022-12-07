@@ -15,18 +15,28 @@ const Navigation = () => {
                     </Link>
                     <div className="nav-borders nav-border-right">
                         <div className="nav-links-container">
-                            <Link className="nav-link" to="/shop">
-                                Shop
-                            </Link>
-                            <Link className="nav-link" to="/cart">
-                                Contact
-                            </Link>
-                            <Link className="nav-link" to="/cart">
-                                Sign-in
-                            </Link>
-                            <Link className="nav-link" to="/cart">
-                                Cart
-                            </Link>
+                            <ul>
+                                <li>
+                                    <Link className="nav-link" to="/shop">
+                                        Shop
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="nav-link" to="/cart">
+                                        Contact
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="nav-link" to="/cart">
+                                        Sign-in
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="nav-link" to="/cart">
+                                        Cart
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

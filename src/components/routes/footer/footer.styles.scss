@@ -17,12 +17,28 @@
     display: flex;
 }
 
+.footer-bg {
+    background-image: url(../../../assets/footer-bg-img.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 1500px;
+    height: 218px;
+    bottom: 20px;
+}
+
+.footer-links-container {
+    margin-bottom: 100px;
+}
+
 .footer-content-wrapper {
     width: 1600px;
     position: relative;
     margin: 0 auto;
     flex-direction: row;
     display: flex;
+    z-index: 1;
 }
 
 .footer-logo {
@@ -59,11 +75,6 @@
     }
 }
 
-.footer-hr-horizontal {
-    height: 1px;
-    display: flex;
-    margin-bottom: 20px;
-}
 .footer-hr-verticle {
     height: 20px;
     width: 1px;
@@ -86,4 +97,22 @@
 
 .linkedin {
     padding-right: 0;
+}
+
+.footer-copyright-container {
+    width: 100%;
+    background-color: $laser-lemon;
+    margin: 0;
+}
+
+.footer-copyright {
+    width: 100%;
+    background-color: $laser-lemon;
+    padding: 10px 0;
+    max-width: 1600px;
+    margin: 0 auto;
+    p {
+        margin: 0;
+        color: $flame;
+    }
 }

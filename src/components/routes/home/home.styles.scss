@@ -10,6 +10,7 @@
 }
 
 .site-bg {
+    transition: all 0.3s ease-out;
     @media only screen and (min-width: $tablet) {
         overflow-x: hidden;
         background-image: url("../../../assets/bg-el.svg");
