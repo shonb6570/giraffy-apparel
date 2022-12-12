@@ -14,9 +14,15 @@
     @media only screen and (min-width: $tablet) {
         overflow-x: hidden;
         background-image: url("../../../assets/bg-el.svg");
-        background-size: 1800px;
+        background-size: 2000px;
         background-repeat: no-repeat;
         margin: 2rem auto 0;
+    }
+    @media only screen and (min-width: $desktop-sm) {
+        background-size: 1850px;
+    }
+    @media only screen and (min-width: $desktop-med) {
+        background-size: 2000px;
     }
 
     @media only screen and (min-width: $desktop-xl) {

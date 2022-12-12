@@ -12,7 +12,6 @@
         align-items: center;
         max-width: 1600px;
         height: 300px;
-        background-color: red;
         justify-content: center;
     }
 }
@@ -22,7 +21,7 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    max-width: 1660px;
+    max-width: 1600px;
     align-items: center;
     flex-direction: row;
 }
@@ -50,6 +49,9 @@
 .logo {
     margin: 0 auto;
     width: 300px;
+    @media only screen and (min-width: $desktop-sm) {
+        margin-left: 0;
+    }
 }
 
 .nav-links-container {
@@ -62,7 +64,6 @@
         justify-content: space-between;
         margin: auto 0 auto auto;
         justify-content: center;
-        margin-top: 20px;
 
         li {
             list-style: none;
@@ -75,14 +76,22 @@
     padding: 0 0.8rem;
     text-decoration: none;
     color: black;
+    @media only screen and (min-width: $desktop-sm) {
+        font-size: 0.95rem;
+    }
+    @media only screen and (min-width: $desktop-med) {
+        font-size: 1.2rem;
+    }
+    @media only screen and (min-width: $desktop-xl) {
+        font-size: 1.3rem;
+    }
 }
 
 .nav-stripes-right {
     background-image: url(../../../assets/nav-right-stripes.svg);
     width: 220px;
     height: 200px;
-    z-index: 2;
-    margin: -25px -30px 0 auto;
+    margin: -25px 0px 0 auto;
     background-repeat: no-repeat;
 }
 
@@ -91,7 +100,6 @@
     background-image: url(../../../assets/nav-left-stripes.svg);
     width: 220px;
     height: 200px;
-    z-index: 2;
-    margin: -25px auto 0 -30px;
+    margin: -25px auto 0 0px;
     background-repeat: no-repeat;
 }

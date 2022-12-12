@@ -1,3 +1,4 @@
+@import "../../../variables.scss";
 @import "../../../colors.scss";
 
 .giraffy-icon {
@@ -15,44 +16,66 @@
     background-color: $mine-shaft;
     width: 100%;
     display: flex;
+    padding: 0 5%;
+    box-sizing: border-box;
 }
 
 .footer-bg {
-    background-image: url(../../../assets/footer-bg-img.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    width: 1500px;
-    height: 218px;
-    bottom: 20px;
+    display: none;
+    @media only screen and (min-width: $desktop-sm) {
+        display: flex;
+        background-image: url(../../../assets/footer-bg-img.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        width: 1500px;
+        height: 218px;
+        bottom: 20px;
+    }
+    @media only screen and (min-width: $desktop-sm) {
+        margin-right: -20px;
+    }
 }
 
 .footer-links-container {
     margin-bottom: 100px;
+    @media only screen and (min-width: $desktop-sm) {
+        margin-bottom: 98px;
+    }
 }
 
 .footer-content-wrapper {
-    width: 1600px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
     flex-direction: row;
     display: flex;
     z-index: 1;
+    @media only screen and (min-width: $desktop-sm) {
+        width: 1600px;
+    }
 }
 
 .footer-logo {
     background-image: url(../../../assets/footer-logo.svg);
     background-repeat: no-repeat;
-    height: 180px;
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     margin: 40px 0;
+    @media only screen and (min-width: $desktop-sm) {
+        width: 100px;
+        margin: 36px 0;
+    }
 }
 
 .footer-brand-title {
     color: $flame;
-    font-size: 48px;
+    font-size: 30px;
     display: flex;
+    @media only screen and (min-width: $desktop-sm) {
+        font-size: 48px;
+    }
 
     p {
         margin-top: 64px;
@@ -62,13 +85,22 @@
 
 .footer-links-wrapper {
     display: flex;
-    flex-direction: row;
-    width: 700px;
+    flex-direction: column;
+    width: 100%;
+    @media only screen and (min-width: $desktop-sm) {
+        width: 700px;
+        flex-direction: row;
+    }
 }
 .footer-nav-links {
     display: flex;
     flex-direction: row;
     color: $flame;
+    width: 245px;
+    flex-wrap: wrap;
+    @media only screen and (min-width: $desktop-sm) {
+        width: 100%;
+    }
 
     .footer-nav-link {
         padding: 8px 10px;
@@ -76,23 +108,41 @@
 }
 
 .footer-hr-verticle {
-    height: 20px;
-    width: 1px;
-    display: flex;
+    display: none;
+
+    @media only screen and (min-width: $desktop-sm) {
+        height: 20px;
+        width: 1px;
+        display: flex;
+    }
 }
 
 .social-links {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 245px;
     margin-left: 20px;
+    margin-top: 10px;
+    @media only screen and (min-width: $desktop-sm) {
+        width: 100%;
+        margin-left: 40px;
+        margin-top: 0;
+    }
 }
 
 .social-icon {
-    width: 30px;
+    width: 40px;
     height: 40px;
     background-image: url(../../../assets/twitter.svg);
     background-repeat: no-repeat;
-    padding: 0 15px;
+    padding: 0px 10px;
+    margin-top: 15px;
+    @media only screen and (min-width: $desktop-sm) {
+        width: 40px;
+        height: 40px;
+        margin-top: 0;
+    }
 }
 
 .linkedin {
@@ -103,6 +153,8 @@
     width: 100%;
     background-color: $laser-lemon;
     margin: 0;
+    padding: 0 5%;
+    box-sizing: border-box;
 }
 
 .footer-copyright {

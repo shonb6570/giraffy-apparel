@@ -10,18 +10,23 @@ span {
 
 .category-bg-element {
     display: flex;
+    height: auto;
     flex-direction: column;
     background-repeat: no-repeat;
-    @media only screen and (min-width: $tablet) {
+    @media only screen and (min-width: $desktop-sm) {
         flex-direction: row;
     }
+}
+.category-container {
+    width: 100%;
+    height: auto;
 }
 
 .category-container:first-of-type {
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 550px;
+    height: 100%;
 
     &:hover {
         cursor: pointer;
@@ -32,26 +37,29 @@ span {
     }
     .category-bg-element {
         background-image: url(../../assets/bg-el-1.svg);
-        width: 1600px;
-        @media only screen and (min-width: $tablet) {
+        width: 100%;
+        background-size: cover;
+        @media only screen and (min-width: $desktop-sm) {
+            width: 1600px;
             margin: 27px 0 0 0px;
         }
         @media only screen and (min-width: $desktop-med) {
-            margin: 27px 0 0 250px;
+            margin: 120px 0 0 250px;
+            background-size: auto;
+        }
+        @media only screen and (min-width: $desktop-xl) {
+            margin-top: 163px;
         }
     }
 
     &:first-child .category-img {
         height: 420px;
-        width: 360px;
-        margin: 20px;
-        border-left: 10px solid $electric-blue;
-
+        width: 90%;
+        margin: 0 auto;
         @media only screen and (min-width: $tablet) {
-            height: 380px;
-            width: 250px;
-            margin: 20px 45px auto;
-            display: inline-flex;
+            height: 600px;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
         @media only screen and (min-width: $desktop-sm) {
@@ -60,6 +68,15 @@ span {
             margin-top: 0.25rem;
             margin-left: 4rem;
             margin-top: -2rem;
+            border-left: 10px solid $electric-blue;
+        }
+        @media only screen and (min-width: $desktop-xl) {
+            height: 600px;
+            width: 600px;
+            margin-top: 0.25rem;
+            margin-left: 8rem;
+            margin-top: -7rem;
+            border-left: 10px solid $electric-blue;
         }
     }
 }
@@ -68,8 +85,7 @@ span {
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 575px;
-
+    margin-top: 110px;
     &:hover {
         cursor: pointer;
 
@@ -80,48 +96,56 @@ span {
     .category-bg-element {
         background-image: url(../../assets/asset-22.svg);
         width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
         @media only screen and (min-width: $desktop-sm) {
             flex-direction: row-reverse;
-            width: 1300px;
-            margin: 120px 0 0 -350px;
+            margin: 120px 0 0 0px;
         }
         @media only screen and (min-width: $desktop-med) {
-            margin: 120px 0 0 -124px;
+            margin: 60px 0 0 0px;
         }
         @media only screen and (min-width: $desktop-xl) {
             width: 100%;
+            margin: 0 0 0 -200px;
         }
     }
 
     .category-img {
         height: 350px;
         width: 275px;
-        margin-top: 2rem;
+        margin: -1rem auto 0 5%;
         border-right: 10px solid $flame;
 
-        @media only screen and (min-width: $desktop-med) {
+        @media only screen and (min-width: $tablet) {
+            height: 500px;
+            width: 50vw;
+            margin-left: 1rem;
+        }
+        @media only screen and (min-width: $desktop-sm) {
             height: 450px;
-            width: 338px;
+            width: 400px;
+        }
+
+        @media only screen and (min-width: $desktop-med) {
+            height: 500px;
+            width: 450px;
             margin-top: -1.5rem;
-            margin-left: 3rem;
+            margin-left: 60px;
         }
 
         @media only screen and (min-width: $desktop-xl) {
-            height: 500px;
-            width: 378px;
             margin-top: -1.5rem;
-            margin-left: 4rem;
-            margin-right: 27rem;
+            margin-left: 1rem;
+            margin-right: 4rem;
         }
     }
 }
 
 .category-container:nth-child(3) {
     display: flex;
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 548px;
-
+    background-size: cover;
     &:hover {
         cursor: pointer;
 
@@ -132,9 +156,16 @@ span {
     .category-bg-element {
         background-image: url(../../assets/asset3.svg);
         width: 100%;
+        margin-top: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
         @media only screen and (min-width: $desktop-sm) {
             margin-top: 143px;
-            margin-left: 289px;
+            margin-left: 10%;
+        }
+        @media only screen and (min-width: $desktop-xl) {
+            margin-top: 143px;
+            margin-left: 15%;
         }
     }
 
@@ -142,22 +173,24 @@ span {
         height: 350px;
         width: 275px;
         margin-top: 2rem;
+        margin: -1rem auto 0 5%;
         border-left: 10px solid $electric-blue;
 
+        @media only screen and (min-width: $tablet) {
+            height: 500px;
+            width: 50vw;
+            margin: -1rem 5% 0 auto;
+        }
+
+        @media only screen and (min-width: $desktop-sm) {
+            width: 400px;
+        }
+
         @media only screen and (min-width: $desktop-med) {
-            height: 450px;
-            width: 320px;
+            width: 450px;
             margin-top: -2rem;
             margin-left: 3rem;
             margin-right: 3rem;
-        }
-
-        @media only screen and (min-width: $desktop-xl) {
-            height: 483px;
-            width: 378px;
-            margin-top: -2rem;
-            margin-left: 3rem;
-            margin-right: 5rem;
         }
     }
 }
@@ -165,7 +198,8 @@ span {
 .category-container:nth-child(4) {
     display: flex;
     align-items: center;
-
+    background-repeat: no-repeat;
+    background-size: cover;
     &:hover {
         cursor: pointer;
 
@@ -176,23 +210,40 @@ span {
     .category-bg-element {
         background-image: url(../../assets/bg-el-4.svg);
         width: 100%;
+        margin-top: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
         @media only screen and (min-width: $desktop-sm) {
             margin-top: 138px;
-            margin-left: 289px;
+            margin-left: 230px;
             height: 482px;
+            background-size: unset;
+        }
+        @media only screen and (min-width: $desktop-med) {
+            margin-left: 289px;
+            margin-top: 200px;
         }
         @media only screen and (min-width: $desktop-xl) {
-            margin-top: 320px;
+            margin-top: 160px;
             margin-left: 289px;
             height: 482px;
         }
     }
 
     .category-img {
-        width: 300px;
-        height: 200px;
-        border-left: 10px solid $torea-bay;
+        width: 90%;
+        height: 250px;
+        margin: -1rem auto 0 5%;
+        border-top: 10px solid $torea-bay;
+
+        @media only screen and (min-width: $tablet) {
+            height: 400px;
+            width: 60vw;
+            margin: -1rem auto 0;
+        }
         @media only screen and (min-width: $desktop-sm) {
+            border-top: none;
+            border-left: 10px solid $torea-bay;
             height: 300px;
             width: 400px;
             margin-left: -10rem;
@@ -206,23 +257,24 @@ span {
             margin-top: 3rem;
         }
         @media only screen and (min-width: $desktop-xl) {
-            margin-left: 3rem;
+            margin: 2rem 0 0 -1rem;
         }
     }
 }
 
 .category-container:nth-child(5) {
-    height: 1200px;
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
+    margin-top: 160px;
+    margin-bottom: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
     @media only screen and (min-width: $desktop-sm) {
-        height: 1000px;
-        margin-bottom: 300px;
+        margin-bottom: 400px;
     }
     @media only screen and (min-width: $desktop-xl) {
-        height: 1200px;
-        margin-bottom: 300px;
+        margin-bottom: 600px;
+        margin-top: 160px;
     }
 
     &:hover {
@@ -235,9 +287,11 @@ span {
     .category-bg-element {
         background-image: url(../../assets/bg-el-5.svg);
         width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
         flex-direction: column-reverse !important;
         @media only screen and (min-width: $desktop-sm) {
-            margin-top: 116px;
+            margin-top: 160px;
             margin-left: -160px;
         }
         @media only screen and (min-width: $desktop-med) {
@@ -246,16 +300,27 @@ span {
     }
 
     .category-img {
-        height: 391px;
-        width: 694px;
-        border-right: 10px solid $flame;
+        height: 250px;
+        width: 90%;
+        margin: -0.5rem auto 0 5%;
+        border-bottom: 10px solid $flame;
+        @media only screen and (min-width: $tablet) {
+            height: 400px;
+            width: 60vw;
+            margin: -0.5rem auto 0;
+        }
         @media only screen and (min-width: $desktop-sm) {
             height: 362px;
             width: 751px;
             margin: 0px 0 0 380px;
+            border-right: 10px solid $flame;
+            border-bottom: none;
         }
         @media only screen and (min-width: $desktop-med) {
             margin: 0px 0 0 421px;
+        }
+        @media only screen and (min-width: $desktop-xl) {
+            height: 450px;
         }
     }
 }
@@ -266,20 +331,37 @@ span {
 }
 
 .new {
-    font-size: 22px;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin: -79px auto 0;
+    width: 90%;
     z-index: 1;
+    background: linear-gradient(
+        0.5turn,
+        rgba(225, 225, 225, 0.813),
+        rgba(255, 255, 255, 0)
+    );
 
     @media only screen and (min-width: $tablet) {
+        margin: -69px auto 0;
+        max-width: 500px;
+    }
+    @media only screen and (min-width: $desktop-sm) {
+        max-width: unset;
         flex-direction: row;
-        margin-left: -40px;
+        margin-left: -44px;
         margin-top: 20px;
+    }
+    @media only screen and (min-width: $desktop-med) {
+        margin-top: -10px;
+        margin-left: -20px;
+    }
+    @media only screen and (min-width: $desktop-xl) {
+        margin-top: -85px;
+        margin-left: -31px;
     }
     :first-child {
         font-size: 56px;
         letter-spacing: -3px;
-        @media only screen and (min-width: $desktop-sm) {
+        @media only screen and (min-width: $tablet) {
             font-size: 78px;
             letter-spacing: -3px;
             padding-left: 30px;
@@ -294,7 +376,7 @@ span {
             margin-top: -68px;
             padding-left: 68px;
         }
-        @media only screen and (min-width: $desktop-med) {
+        @media only screen and (min-width: $desktop-xl) {
             font-size: 160px;
             letter-spacing: -10px;
             margin-top: -76px;
@@ -304,10 +386,17 @@ span {
         font-size: 51px;
         letter-spacing: -4px;
         margin-top: -47px;
+        @media only screen and (min-width: $tablet) {
+            font-size: 72px;
+            letter-spacing: -4px;
+            margin-top: -52px;
+            padding-left: 40px;
+        }
         @media only screen and (min-width: $desktop-sm) {
             font-size: 92px;
             letter-spacing: -4px;
             margin-top: -72px;
+            padding-left: 0px;
         }
         @media only screen and (min-width: $desktop-med) {
             margin-top: -79px;
@@ -316,33 +405,61 @@ span {
 }
 
 .womens {
-    font-size: 22px;
-    padding-left: 30px;
+    margin: -79px auto 0;
+    width: 90%;
+    z-index: 1;
+    background: linear-gradient(
+        0.25turn,
+        rgba(225, 225, 225, 0.813),
+        50%,
+        rgba(255, 255, 255, 0)
+    );
     position: relative;
-    @media only screen and (min-width: $tablet) {
+    @media only screen and (min-width: $desktop-sm) {
         flex-direction: row;
+        width: fit-content;
+    }
+    @media only screen and (min-width: $desktop-med) {
+        margin: -42px 0 0 auto;
+    }
+    @media only screen and (min-width: $desktop-xl) {
+        margin: -42px 2rem 0 auto;
     }
 
     &:before {
-        content: "";
-        border-left: 8px solid $magenta;
-        width: 10px;
-        height: 90%;
-        position: absolute;
-        top: 35px;
-        left: -20px;
-        opacity: 60%;
+        @media only screen and (min-width: $desktop-sm) {
+            content: "";
+            border-left: 8px solid $magenta;
+            width: 10px;
+            height: 90%;
+            position: absolute;
+            top: 35px;
+            left: -150px;
+            opacity: 60%;
+        }
+        @media only screen and (min-width: $desktop-med) {
+            left: -80px;
+        }
     }
 
     :first-child {
-        @media only screen and (min-width: $desktop-sm) {
+        font-size: 50px;
+        letter-spacing: -3px;
+        @media only screen and (min-width: $tablet) {
             font-size: 62px;
+            letter-spacing: -3px;
+        }
+        @media only screen and (min-width: $desktop-sm) {
+            font-size: 82px;
             letter-spacing: -3px;
             padding-left: 30px;
             margin-top: 58px;
         }
     }
     :nth-child(2) {
+        font-size: 60px;
+        letter-spacing: -5px;
+        margin-top: -38px;
         @media only screen and (min-width: $desktop-sm) {
             font-size: 75px;
             letter-spacing: -6px;
@@ -350,6 +467,9 @@ span {
         }
     }
     :nth-child(3) {
+        font-size: 64px;
+        margin-top: -42px;
+        padding-left: 4px;
         @media only screen and (min-width: $desktop-sm) {
             font-size: 72px;
             letter-spacing: -3px;
@@ -360,62 +480,129 @@ span {
 }
 
 .mens {
-    font-size: 22px;
+    margin: -79px auto 0;
+    width: 90%;
+    z-index: 1;
+    background: linear-gradient(
+        0.25turn,
+        rgba(225, 225, 225, 0.813),
+        50%,
+        rgba(255, 255, 255, 0)
+    );
     position: relative;
     @media only screen and (min-width: $tablet) {
+        background: linear-gradient(
+            0.25turn,
+            rgba(255, 255, 255, 0),
+            rgba(225, 225, 225, 0.813) 90%
+        );
+    }
+    @media only screen and (min-width: $desktop-sm) {
         flex-direction: row;
+        margin-top: -52px;
+        width: fit-content;
+    }
+    @media only screen and (min-width: $desktop-xl) {
+        margin-left: 0;
     }
 
     &:after {
-        content: "";
-        border-left: 8px solid $laser-lemon;
-        width: 10px;
-        height: 90%;
-        position: absolute;
-        top: 31px;
-        right: -100px;
-        opacity: 80%;
+        @media only screen and (min-width: $desktop-sm) {
+            content: "";
+            border-left: 8px solid $laser-lemon;
+            width: 10px;
+            height: 90%;
+            position: absolute;
+            top: 31px;
+            left: 600px;
+            opacity: 80%;
+        }
     }
 
     :first-child {
+        font-size: 50px;
+        letter-spacing: -3px;
+        @media only screen and (min-width: $tablet) {
+            margin: 0 2% 0 auto;
+        }
         @media only screen and (min-width: $desktop-sm) {
             font-size: 62px;
             letter-spacing: -3px;
             padding-left: 30px;
-            margin-top: 58px;
+            margin: 58px 0 0;
+        }
+        @media only screen and (min-width: $desktop-med) {
+            font-size: 72px;
+            letter-spacing: -3px;
         }
     }
     :nth-child(2) {
+        font-size: 60px;
+        letter-spacing: -5px;
+        margin-top: -38px;
+        @media only screen and (min-width: $tablet) {
+            margin: -34px 2% 0 auto;
+        }
         @media only screen and (min-width: $desktop-sm) {
             font-size: 75px;
             letter-spacing: -6px;
-            margin-top: -32px;
-            padding-left: 65px;
+            margin: -32px 0 0;
+            padding-left: 60px;
+        }
+        @media only screen and (min-width: $desktop-med) {
+            font-size: 105px;
+            letter-spacing: -6px;
+            margin: -62px 0 0;
         }
     }
     :nth-child(3) {
+        font-size: 64px;
+        margin-top: -42px;
+        padding-left: 4px;
+        @media only screen and (min-width: $tablet) {
+            margin: -38px 2% 0 auto;
+        }
         @media only screen and (min-width: $desktop-sm) {
             font-size: 72px;
             letter-spacing: -3px;
-            margin-top: -44px;
+            margin: -44px 0 0;
+            padding-left: 15px;
+        }
+        @media only screen and (min-width: $desktop-med) {
+            font-size: 84px;
+            letter-spacing: -3px;
+            margin: -58px 0 0;
             padding-left: 15px;
         }
     }
 }
 
 .bags {
-    font-size: 22px;
+    margin: -18px auto 0;
+    width: 90%;
     z-index: 1;
+    background: linear-gradient(
+        0.25turn,
+        rgba(225, 225, 225, 0.813),
+        50%,
+        rgba(255, 255, 255, 0)
+    );
     @media only screen and (min-width: $tablet) {
-        flex-direction: row;
+        width: 60vw;
     }
     @media only screen and (min-width: $desktop-sm) {
+        flex-direction: row;
         margin-left: 20px;
+    }
+    @media only screen and (min-width: $desktop-xl) {
+        width: fit-content;
     }
 
     :first-child {
+        font-size: 50px;
+        letter-spacing: -3px;
         @media only screen and (min-width: $desktop-sm) {
-            font-size: 62px;
+            font-size: 68px;
             letter-spacing: -3px;
             padding-left: 30px;
             margin-top: 58px;
@@ -426,31 +613,51 @@ span {
         }
     }
     :nth-child(2) {
+        font-size: 60px;
+        letter-spacing: -5px;
+        margin-top: -38px;
         @media only screen and (min-width: $desktop-sm) {
-            font-size: 75px;
+            font-size: 72px;
             letter-spacing: -6px;
-            margin-top: -44px;
+            margin-top: -38px;
             padding-left: 117px;
         }
     }
     :nth-child(3) {
+        font-size: 64px;
+        margin-top: -42px;
+        padding-left: 4px;
         @media only screen and (min-width: $desktop-sm) {
-            font-size: 72px;
-            letter-spacing: -3px;
-            margin-top: -39px;
+            font-size: 100px;
+            letter-spacing: -7px;
+            margin-top: -56px;
             padding-left: 30px;
         }
     }
 }
 
 .accessories {
-    font-size: 22px;
-    margin: -180px 399px 0px 325px;
+    margin: -79px auto 0;
+    width: 90%;
+    z-index: 1;
+    background: linear-gradient(
+        0.25turn,
+        rgba(124, 242, 239, 0.813),
+        50%,
+        rgba(255, 255, 255, 0)
+    );
     @media only screen and (min-width: $tablet) {
+        width: 60vw;
+        margin-bottom: -40px;
+    }
+    @media only screen and (min-width: $desktop-sm) {
         flex-direction: row;
+        margin: -180px 399px 0px 325px;
     }
 
     :first-child {
+        font-size: 50px;
+        letter-spacing: -3px;
         @media only screen and (min-width: $desktop-sm) {
             font-size: 97px;
             letter-spacing: -3px;
@@ -459,6 +666,9 @@ span {
         }
     }
     :nth-child(2) {
+        font-size: 60px;
+        letter-spacing: -5px;
+        margin-top: -38px;
         @media only screen and (min-width: $desktop-sm) {
             font-size: 75px;
             letter-spacing: -6px;
@@ -467,6 +677,9 @@ span {
         }
     }
     :nth-child(3) {
+        font-size: 64px;
+        margin-top: -42px;
+        padding-left: 4px;
         @media only screen and (min-width: $desktop-sm) {
             font-size: 172px;
             letter-spacing: -7px;
@@ -494,7 +707,7 @@ span {
         color: rgb(75, 75, 75);
         letter-spacing: 0;
         text-decoration: none;
-        @media only screen and (min-width: $tablet) {
+        @media only screen and (min-width: $desktop-sm) {
             font-size: 28px;
         }
         @media only screen and (min-width: $desktop-sm) {
@@ -514,6 +727,10 @@ span {
     }
 }
 
+.cta .boxy {
+    font-size: 32px;
+}
+
 .new,
 .womens,
 .mens,
@@ -521,7 +738,9 @@ span {
 .accessories {
     display: inline-flex;
     flex-direction: column !important;
-    margin-bottom: auto;
+    @media only screen and (min-width: $desktop-sm) {
+        background: none;
+    }
 }
 .new,
 .bags {
@@ -530,7 +749,19 @@ span {
 
 .womens,
 .mens {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    @media only screen and (min-width: $desktop-xl) {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.mens .cta {
+    @media only screen and (min-width: $tablet) {
+        margin: 10px 2% 10px auto;
+    }
+    @media only screen and (min-width: $desktop-sm) {
+        margin: 20px auto 10px 20px;
+    }
 }
 
 .accessories {

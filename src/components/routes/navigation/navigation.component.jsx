@@ -22,12 +22,12 @@ const Navigation = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="nav-link" to="/cart">
+                                    <Link className="nav-link" to="/contact">
                                         Contact
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="nav-link" to="/cart">
+                                    <Link className="nav-link" to="/sign-in">
                                         Sign-in
                                     </Link>
                                 </li>

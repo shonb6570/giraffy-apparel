@@ -3,6 +3,10 @@ import { useState, useEffect } from "react";
 import Navigation from "./components/routes/navigation/navigation.component";
 import NavigationMobile from "./components/routes/navigation-mobile/navigation-mobile.component";
 import Home from "./components/routes/home/home.component";
+import SignIn from "./components/routes/sign-in/signin.component";
+import Shop from "./components/routes/shop/shop.component";
+import Contact from "./components/routes/contact/contact.component";
+import Cart from "./components/routes/cart/cart.component";
 import Footer from "./components/routes/footer/footer.component";
 
 const App = () => {
@@ -22,11 +26,19 @@ const App = () => {
                 {!matches && (
                     <Route path="/" element={<Navigation />}>
                         <Route index element={<Home />} />
+                        <Route path="shop" element={<Shop />} />
+                        <Route path="contact" element={<Contact />} />
+                        <Route path="sign-in" element={<SignIn />} />
+                        <Route path="cart" element={<Cart />} />
                     </Route>
                 )}
                 {matches && (
                     <Route path="/" element={<NavigationMobile />}>
                         <Route index element={<Home />} />
+                        <Route path="shop" element={<Shop />} />
+                        <Route path="contact" element={<Contact />} />
+                        <Route path="sign-in" element={<SignIn />} />
+                        <Route path="cart" element={<Cart />} />
                     </Route>
                 )}
             </Routes>
