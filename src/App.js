@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Navigation from "./components/routes/navigation/navigation.component";
 import NavigationMobile from "./components/routes/navigation-mobile/navigation-mobile.component";
 import Home from "./components/routes/home/home.component";
-import SignIn from "./components/routes/sign-in/signin.component";
+import SignInForm from "./components/routes/sign-in/sign-in-form.component";
 import Shop from "./components/routes/shop/shop.component";
 import Contact from "./components/routes/contact/contact.component";
 import Cart from "./components/routes/cart/cart.component";
@@ -28,7 +28,7 @@ const App = () => {
                         <Route index element={<Home />} />
                         <Route path="shop" element={<Shop />} />
                         <Route path="contact" element={<Contact />} />
-                        <Route path="sign-in" element={<SignIn />} />
+                        <Route path="sign-in" element={<SignInForm />} />
                         <Route path="cart" element={<Cart />} />
                     </Route>
                 )}
@@ -37,7 +37,7 @@ const App = () => {
                         <Route index element={<Home />} />
                         <Route path="shop" element={<Shop />} />
                         <Route path="contact" element={<Contact />} />
-                        <Route path="sign-in" element={<SignIn />} />
+                        <Route path="sign-in" element={<SignInForm />} />
                         <Route path="cart" element={<Cart />} />
                     </Route>
                 )}
