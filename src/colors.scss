@@ -16,4 +16,9 @@ $magenta: #ff00ff;
 $cyan: #00ffff;
 
 $gray: rgb(145, 145, 145);
-$main-color: black;
+$black: rgb(16, 16, 16);
+$white: rgb(248, 248, 248);
+
+.app-container {
+    background-color: $white;
+}

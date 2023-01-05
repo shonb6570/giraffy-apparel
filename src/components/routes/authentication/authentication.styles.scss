@@ -1,0 +1,40 @@
+@import "../../../variables.scss";
+@import "../../../colors.scss";
+
+.sign-in-container {
+    background-image: url(../../../assets/sign-up-bg-img.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center -80px;
+    margin: 0 auto 200px;
+    max-width: 1600px;
+    height: 900px;
+}
+
+.sign-in-form-wrapper {
+    display: flex;
+    max-width: 90%;
+    border: 1px solid $torea-bay;
+    background-color: $white;
+    margin: 50px auto 220px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 20px 0px $magenta;
+    @media only screen and (min-width: $tablet) {
+        max-width: 800px;
+        flex-direction: row;
+        margin: auto auto 300px;
+    }
+    hr {
+        width: 80%;
+        margin: auto auto;
+        border: 0;
+        height: 2px;
+        background: $flame;
+        @media only screen and (min-width: $tablet) {
+            width: 2px;
+            height: 200px;
+        }
+    }
+}

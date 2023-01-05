@@ -700,6 +700,7 @@ span {
     margin-top: 20px;
     border: solid 1px black;
     display: flex;
+    font-family: $font-primary;
     background-color: rgba(255, 255, 255, 0.806);
     a {
         padding: 0;
@@ -728,7 +729,7 @@ span {
 }
 
 .cta .boxy {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .new,
@@ -738,6 +739,7 @@ span {
 .accessories {
     display: inline-flex;
     flex-direction: column !important;
+    font-family: $font-tertiary;
     @media only screen and (min-width: $desktop-sm) {
         background: none;
     }

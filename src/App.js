@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Navigation from "./components/routes/navigation/navigation.component";
 import NavigationMobile from "./components/routes/navigation-mobile/navigation-mobile.component";
 import Home from "./components/routes/home/home.component";
-import SignInForm from "./components/routes/sign-in/sign-in-form.component";
+import Authentication from "./components/routes/authentication/authentication.component";
 import Shop from "./components/routes/shop/shop.component";
 import Contact from "./components/routes/contact/contact.component";
 import Cart from "./components/routes/cart/cart.component";
@@ -21,14 +21,14 @@ const App = () => {
             .addEventListener("change", (e) => setMatches(e.matches));
     }, []);
     return (
-        <div>
+        <div className="app-container">
             <Routes>
                 {!matches && (
                     <Route path="/" element={<Navigation />}>
                         <Route index element={<Home />} />
                         <Route path="shop" element={<Shop />} />
                         <Route path="contact" element={<Contact />} />
-                        <Route path="sign-in" element={<SignInForm />} />
+                        <Route path="auth" element={<Authentication />} />
                         <Route path="cart" element={<Cart />} />
                     </Route>
                 )}
@@ -37,7 +37,7 @@ const App = () => {
                         <Route index element={<Home />} />
                         <Route path="shop" element={<Shop />} />
                         <Route path="contact" element={<Contact />} />
-                        <Route path="sign-in" element={<SignInForm />} />
+                        <Route path="auth" element={<Authentication />} />
                         <Route path="cart" element={<Cart />} />
                     </Route>
                 )}

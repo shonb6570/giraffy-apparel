@@ -73,6 +73,7 @@
     color: $flame;
     font-size: 30px;
     display: flex;
+    font-family: $font-tertiary;
     @media only screen and (min-width: $desktop-sm) {
         font-size: 48px;
     }
@@ -98,6 +99,7 @@
     color: $flame;
     width: 245px;
     flex-wrap: wrap;
+    font-family: $font-secondary;
     @media only screen and (min-width: $desktop-sm) {
         width: 100%;
     }

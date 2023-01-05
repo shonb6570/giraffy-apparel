@@ -1,6 +1,7 @@
 @import "../../variables.scss";
+@import "../../colors.scss";
 
-.sign-up-form-container {
+.sign-in-form-container {
     display: flex;
     flex-direction: column;
     padding: 50px 40px 80px;
@@ -12,5 +13,13 @@
     }
     span {
         font-family: $font-secondary;
+    }
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    button {
+        margin: 0 5px;
     }
 }

@@ -51,52 +51,50 @@ const SignUpForm = () => {
     };
 
     return (
-        <div className="sign-up-form-wrapper">
-            <div className="sign-up-form-container">
-                <h2>Don't have an Account?</h2>
-                <span>Sign up with your email and password</span>
-                <form onSubmit={handleSubmit}>
-                    <FormInput
-                        label="Display Name"
-                        required
-                        type="text"
-                        onChange={handleChange}
-                        name="displayName"
-                        value={displayName}
-                    />
+        <div className="sign-up-form-container">
+            <h2>Don't have an Account?</h2>
+            <span>Sign up with your email and password</span>
+            <form onSubmit={handleSubmit}>
+                <FormInput
+                    label="Display Name"
+                    required
+                    type="text"
+                    onChange={handleChange}
+                    name="displayName"
+                    value={displayName}
+                />
 
-                    <FormInput
-                        label="Email"
-                        required
-                        type="email"
-                        onChange={handleChange}
-                        name="email"
-                        value={email}
-                    />
+                <FormInput
+                    label="Email"
+                    required
+                    type="email"
+                    onChange={handleChange}
+                    name="email"
+                    value={email}
+                />
 
-                    <FormInput
-                        label="Password"
-                        required
-                        type="password"
-                        onChange={handleChange}
-                        name="password"
-                        value={password}
-                    />
+                <FormInput
+                    label="Password"
+                    required
+                    type="password"
+                    onChange={handleChange}
+                    name="password"
+                    value={password}
+                />
 
-                    <FormInput
-                        label="Confirm Password"
-                        required
-                        type="password"
-                        onChange={handleChange}
-                        name="confirmPassword"
-                        value={confirmPassword}
-                    />
+                <FormInput
+                    label="Confirm Password"
+                    required
+                    type="password"
+                    onChange={handleChange}
+                    name="confirmPassword"
+                    value={confirmPassword}
+                />
 
-                    <Button buttonType="inverted" type="submit">
-                        Sign Up
-                    </Button>
-                </form>
-            </div>
+                <Button buttonType="inverted" type="submit">
+                    Sign Up
+                </Button>
+            </form>
         </div>
     );
 };

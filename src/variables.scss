@@ -5,3 +5,26 @@ $desktop-sm: 992px;
 $desktop-med: 1200px;
 $desktop-lg: 1400px;
 $desktop-xl: 1600px;
+
+@font-face {
+    font-family: "Abril Fatface";
+    src: url("./fonts/AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Avenir-Book";
+    src: url("./fonts/Avenir-Book.woff2") format("woff2"),
+        url("./fonts/Avenir-Book.woff") format("woff"),
+        url("./fonts/Avenir-Book.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir-Medium";
+    src: url("./fonts/Avenir-Medium.woff2") format("woff2"),
+        url("./fonts/Avenir-Medium.woff") format("woff"),
+        url("./fonts/Avenir-Medium.ttf") format("truetype");
+}
+
+$font-primary: "Avenir-Medium", Montserrat, Lato, sans-serif;
+$font-secondary: "Avenir-Book", Montserrat, Lato, sans-serif;
+$font-tertiary: "Abril Fatface", Georgia, "Times New Roman", Times, serif;

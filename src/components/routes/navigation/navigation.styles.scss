@@ -3,6 +3,7 @@
 /* ============================================= */
 
 @import "../../../variables.scss";
+@import "../../../colors.scss";
 
 .navigation {
     display: none;
@@ -27,8 +28,8 @@
 }
 
 .nav-borders {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
     height: 34px;
     display: flex;
     align-items: center;
@@ -75,7 +76,8 @@
     display: inline-flex;
     padding: 0 0.8rem;
     text-decoration: none;
-    color: black;
+    font-family: $font-primary;
+    color: $black;
     @media only screen and (min-width: $desktop-sm) {
         font-size: 0.95rem;
     }
