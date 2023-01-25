@@ -1,0 +1,50 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.cta a,
+button,
+.sign-in-form-container h2,
+.sign-up-form-container h2 {
+    font-family: $font-primary;
+}
+
+span,
+li {
+    font-family: $font-secondary;
+}
+
+h2,
+p {
+    font-family: $font-tertiary;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 100%;
+    background-color: aqua;
+    box-sizing: border-box;
+
+    @include for-size(tablet) {
+        margin: 0 auto;
+        max-width: 992px;
+    }
+
+    @include for-size(desktop-sm) {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    @include for-size(desktop-med) {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    @include for-size(desktop-lg) {
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+}
+
+.container-full {
+    width: 100%;
+}

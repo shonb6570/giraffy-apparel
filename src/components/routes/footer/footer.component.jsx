@@ -16,10 +16,10 @@ const Footer = () => {
                         </div>
                         <div className="footer-links-wrapper">
                             <div className="footer-nav-links">
-                                <div className="footer-nav-link">Contact</div>
-                                <div className="footer-nav-link">Support</div>
-                                <div className="footer-nav-link">About</div>
-                                <div className="footer-nav-link">Careers</div>
+                                <span className="footer-nav-link">Contact</span>
+                                <span className="footer-nav-link">Support</span>
+                                <span className="footer-nav-link">About</span>
+                                <span className="footer-nav-link">Careers</span>
                             </div>
                             <hr className="footer-hr-verticle" />
                             <div className="social-links">

@@ -1,10 +1,19 @@
+import { useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../../assets/logo.svg";
 import { Sling as Hamburger } from "hamburger-react";
 import { useState, useEffect } from "react";
+import { UserContext } from "../../contexts/user.context";
+import { signOutUser } from "../../../utilities/firebase.utils";
 import "./navigation-mobile.styles.scss";
 
 const NavigationMobile = () => {
+    const { currentUser, setCurrentUser } = useContext(UserContext);
+
+    const signOutHandler = async () => {
+        signOutUser();
+        setCurrentUser(null);
+    };
     // hamburger icon states (open / !open)
     const [isOpen, setOpen] = useState(false);
 
@@ -54,9 +63,17 @@ const NavigationMobile = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/auth">
-                                    Sign-in
-                                </Link>
+                                {currentUser ? (
+                                    <Link
+                                        className="nav-link"
+                                        onClick={signOutHandler}>
+                                        Sign out
+                                    </Link>
+                                ) : (
+                                    <Link className="nav-link" to="/auth">
+                                        Sign-in
+                                    </Link>
+                                )}
                             </li>
                             <li>
                                 <Link className="nav-link" to="/cart">

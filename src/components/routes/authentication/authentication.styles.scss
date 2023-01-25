@@ -2,13 +2,16 @@
 @import "../../../colors.scss";
 
 .sign-in-container {
-    background-image: url(../../../assets/sign-up-bg-img.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center -80px;
-    margin: 0 auto 200px;
+    margin: 0 auto 500px;
     max-width: 1600px;
     height: 900px;
+    @media only screen and (min-width: $tablet) {
+        margin: 60px auto 200px;
+        background-image: url(../../../assets/sign-up-bg-img.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center -80px;
+    }
 }
 
 .sign-in-form-wrapper {
@@ -16,7 +19,7 @@
     max-width: 90%;
     border: 1px solid $torea-bay;
     background-color: $white;
-    margin: 50px auto 220px;
+    margin: 50px auto 0;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -25,6 +28,7 @@
         max-width: 800px;
         flex-direction: row;
         margin: auto auto 300px;
+        box-shadow: 25px 35px 0px $magenta;
     }
     hr {
         width: 80%;

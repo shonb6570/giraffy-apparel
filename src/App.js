@@ -8,6 +8,7 @@ import Shop from "./components/routes/shop/shop.component";
 import Contact from "./components/routes/contact/contact.component";
 import Cart from "./components/routes/cart/cart.component";
 import Footer from "./components/routes/footer/footer.component";
+import "./base.scss";
 
 const App = () => {
     // Display port size state (to be used to check if size is tablet or smaller)

@@ -700,7 +700,6 @@ span {
     margin-top: 20px;
     border: solid 1px black;
     display: flex;
-    font-family: $font-primary;
     background-color: rgba(255, 255, 255, 0.806);
     a {
         padding: 0;
@@ -739,7 +738,6 @@ span {
 .accessories {
     display: inline-flex;
     flex-direction: column !important;
-    font-family: $font-tertiary;
     @media only screen and (min-width: $desktop-sm) {
         background: none;
     }
@@ -776,5 +774,12 @@ span {
         margin-bottom: -87px;
         z-index: 1;
         margin-left: 20px;
+    }
+}
+
+.category-paragraph-wrapper {
+    max-width: 500px;
+    span {
+        font-size: 2rem !important;
     }
 }

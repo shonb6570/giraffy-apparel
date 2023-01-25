@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+@mixin for-size($size) {
+    @if $size == tablet {
+        @media (min-width: $tablet) {
+            @content;
+        }
+    } @else if $size == desktop {
+        @media (min-width: $desktop-sm) {
+            @content;
+        }
+    } @else if $size == desktop-med {
+        @media (min-width: $desktop-med) {
+            @content;
+        }
+    } @else if $size == desktop-lg {
+        @media (min-width: $desktop-lg) {
+            @content;
+        }
+    } @else if $size == desktop-xl {
+        @media (min-width: $desktop-xl) {
+            @content;
+        }
+    }
+}
