@@ -21,7 +21,6 @@ p {
 
 .container {
     width: 100%;
-    background-color: aqua;
     box-sizing: border-box;
 
     @include for-size(tablet) {

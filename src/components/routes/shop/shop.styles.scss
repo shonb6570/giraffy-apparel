@@ -1,3 +1,21 @@
+@import "../../../mixins.scss";
+
 .product-wrapper {
     padding: 0 20px;
+}
+
+.products-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-bottom: 300px !important;
+    margin-top: 50px;
+    @include for-size(tablet) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 50px;
+        margin-top: 80px !important;
+    }
+    @include for-size(desktop) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
