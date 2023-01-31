@@ -10,12 +10,15 @@
     margin-top: 50px;
     @include for-size(tablet) {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
         row-gap: 50px;
         margin-top: 80px !important;
     }
     @include for-size(desktop) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include for-size(desktop-med) {
         grid-template-columns: repeat(4, 1fr);
     }
 }

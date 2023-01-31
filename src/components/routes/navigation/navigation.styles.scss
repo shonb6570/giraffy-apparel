@@ -4,16 +4,20 @@
 
 @import "../../../variables.scss";
 @import "../../../colors.scss";
+@import "../../../mixins.scss";
 
 .navigation {
     display: none;
-    @media only screen and (min-width: $desktop-sm) {
+
+    @include for-size(desktop) {
         display: flex;
         margin: 0 auto;
         align-items: center;
         max-width: 1600px;
         height: 300px;
         justify-content: center;
+        box-sizing: border-box;
+        padding: 0 15px;
     }
 }
 .nav-bar-wrapper {
@@ -25,6 +29,10 @@
     max-width: 1600px;
     align-items: center;
     flex-direction: row;
+    @include for-size(desktop) {
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
 }
 
 .nav-borders {
@@ -40,11 +48,11 @@
 .nav-border-right {
     width: 100%;
     display: flex;
-    margin-left: 1rem;
+    margin-left: 4rem;
 }
 
 .nav-border-left {
-    margin-right: 1rem;
+    margin-right: 0rem;
 }
 
 .logo {
@@ -68,6 +76,9 @@
 
         li {
             list-style: none;
+            height: fit-content;
+            margin: auto 0;
+            min-width: 75px;
         }
     }
 }

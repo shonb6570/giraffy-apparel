@@ -1,6 +1,10 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 
+body {
+    margin: 0;
+}
+
 .cta a,
 button,
 .sign-in-form-container h2,

@@ -1,5 +1,6 @@
 @import "../../variables.scss";
 @import "../../colors.scss";
+@import "../../mixins.scss";
 
 .category-bg-element,
 .category-container,
@@ -355,8 +356,8 @@ span {
         margin-left: -20px;
     }
     @media only screen and (min-width: $desktop-xl) {
-        margin-top: -85px;
-        margin-left: -31px;
+        margin-top: -171px;
+        margin-left: -8px;
     }
     :first-child {
         font-size: 56px;
@@ -698,13 +699,14 @@ span {
     padding: 5px 30px;
     margin-left: 20px;
     margin-top: 20px;
-    border: solid 1px black;
+    border: solid 1px $black;
     display: flex;
     background-color: rgba(255, 255, 255, 0.806);
+    transition: all 0.2s ease-in-out;
     a {
         padding: 0;
         margin: 0 auto;
-        color: rgb(75, 75, 75);
+        color: $flame;
         letter-spacing: 0;
         text-decoration: none;
         @media only screen and (min-width: $desktop-sm) {
@@ -713,17 +715,18 @@ span {
         @media only screen and (min-width: $desktop-sm) {
             font-size: 32px;
         }
-        &:hover {
-            color: black;
-            transition: all 0.4s ease-in-out;
-        }
     }
     &:hover {
         padding: 8px 40px;
         margin-left: 16px;
-        color: black;
-        background-color: rgb(255, 255, 255);
+        background-color: $flame;
+        color: $black;
         transition: all 0.2s ease-in-out;
+        border: none;
+        a {
+            color: $black;
+            transition: all 0.4s ease-in-out;
+        }
     }
 }
 
@@ -744,14 +747,20 @@ span {
 }
 .new,
 .bags {
-    color: rgb(53, 53, 53);
+    color: $mine-shaft;
 }
 
-.womens,
-.mens {
-    color: rgb(0, 0, 0);
+.womens {
+    color: $mine-shaft;
     @media only screen and (min-width: $desktop-xl) {
-        color: rgb(255, 255, 255);
+        color: $white;
+    }
+}
+
+.mens {
+    color: $mine-shaft;
+    @media only screen and (min-width: $desktop-med) {
+        color: $white;
     }
 }
 
@@ -765,7 +774,10 @@ span {
 }
 
 .accessories {
-    color: rgb(0, 0, 0);
+    color: $mine-shaft;
+    @media only screen and (min-width: $desktop-sm) {
+        color: $black;
+    }
 }
 
 .accessories .cta {
