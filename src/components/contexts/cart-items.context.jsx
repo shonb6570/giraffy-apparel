@@ -20,11 +20,37 @@ const addCartItem = (cartItems, productToAdd) => {
     return [...cartItems, { ...productToAdd, quantity: 1 }];
 };
 
+const removeCartItem = (cartItems, cartItemToRemove) => {
+    //find cart item to remove
+    let currentItem = cartItems.find(
+        (cartItem) => cartItem.id === cartItemToRemove.id
+    );
+    //check if quantity is equal to 1.  If so, remove item from cart
+    //(filter out that item)
+    if (currentItem.quantity === 1) {
+        return cartItems.filter(
+            (cartitem) => cartitem.id !== cartItemToRemove.id
+        );
+    }
+    //return back cart items with matching cart item with reduced quantity
+    return cartItems.map((cartItem) =>
+        cartItem.id === cartItemToRemove.id
+            ? { ...cartItem, quantity: cartItem.quantity - 1 }
+            : cartItem
+    );
+};
+
+const clearCartItem = (cartItems, cartItemToClear) => {
+    return cartItems.filter((cartitem) => cartitem.id !== cartItemToClear.id);
+};
+
 export const CartContext = createContext({
     isCartOpen: false,
     setIsCartOpen: () => {},
     cartItems: [],
     addItemToCart: () => {},
+    removeItemFromCart: () => {},
+    clearItemFromCart: () => {},
     cartCount: 0,
     cartTotal: 0,
 });
@@ -37,7 +63,7 @@ export const CartProvider = ({ children }) => {
 
     useEffect(() => {
         const newPriceTotal = cartItems.reduce(
-            (total, cartItem) => total + cartItem.price,
+            (total, cartItem) => total + cartItem.quantity * cartItem.price,
             0
         );
         setCartTotal(newPriceTotal);
@@ -57,10 +83,20 @@ export const CartProvider = ({ children }) => {
         );
     };
 
+    const removeItemFromCart = (cartItemToRemove) => {
+        setCartItems(removeCartItem(cartItems, cartItemToRemove));
+    };
+
+    const clearItemFromCart = (CartItemToExtinguish) => {
+        setCartItems(clearCartItem(cartItems, CartItemToExtinguish));
+    };
+
     const value = {
         isCartOpen,
         setIsCartOpen,
         addItemToCart,
+        removeItemFromCart,
+        clearItemFromCart,
         cartItems,
         cartCount,
         cartTotal,

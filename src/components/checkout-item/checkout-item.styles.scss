@@ -1,0 +1,12 @@
+@import "../../colors.scss";
+
+.cartButton {
+    background-color: $white;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: $flame;
+        font-size: medium;
+        transform: scale(1.1);
+    }
+}
