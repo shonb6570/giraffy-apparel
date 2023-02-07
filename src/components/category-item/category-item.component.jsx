@@ -25,11 +25,6 @@ const CategoryItem = ({ category }) => {
                     </div>
                 </div>
             </div>
-
-            {/* <div className={`category-body-container ${title}`}>
-                <h2>{title}</h2>
-                <p>Shop Now</p>
-            </div> */}
         </div>
     );
 };

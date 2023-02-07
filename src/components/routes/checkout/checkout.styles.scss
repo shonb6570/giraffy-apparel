@@ -1,0 +1,26 @@
+@import "../../../base.scss";
+
+.checkout-wrapper {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.checkout-container {
+    display: grid;
+    margin: 0 auto 240px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(40px, auto);
+    justify-items: center;
+    align-items: center;
+    hr {
+        grid-column: 1 / span 5;
+        height: 0.01rem;
+        width: 100%;
+    }
+    img {
+        height: 200px;
+    }
+    .total {
+        grid-column: 4 / span 1;
+    }
+}

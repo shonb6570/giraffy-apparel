@@ -6,7 +6,7 @@ import Home from "./components/routes/home/home.component";
 import Authentication from "./components/routes/authentication/authentication.component";
 import Shop from "./components/routes/shop/shop.component";
 import Contact from "./components/routes/contact/contact.component";
-import Cart from "./components/routes/cart/cart.component";
+import Checkout from "./components/routes/checkout/checkout.component";
 import Footer from "./components/routes/footer/footer.component";
 import "./base.scss";
 
@@ -30,7 +30,7 @@ const App = () => {
                         <Route path="shop" element={<Shop />} />
                         <Route path="contact" element={<Contact />} />
                         <Route path="auth" element={<Authentication />} />
-                        <Route path="cart" element={<Cart />} />
+                        <Route path="checkout" element={<Checkout />} />
                     </Route>
                 )}
                 {matches && (
@@ -39,7 +39,7 @@ const App = () => {
                         <Route path="shop" element={<Shop />} />
                         <Route path="contact" element={<Contact />} />
                         <Route path="auth" element={<Authentication />} />
-                        <Route path="cart" element={<Cart />} />
+                        <Route path="checkout" element={<Checkout />} />
                     </Route>
                 )}
             </Routes>
