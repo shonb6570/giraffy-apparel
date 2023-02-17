@@ -27,7 +27,7 @@ const App = () => {
                 {!matches && (
                     <Route path="/" element={<Navigation />}>
                         <Route index element={<Home />} />
-                        <Route path="shop" element={<Shop />} />
+                        <Route path="shop/*" element={<Shop />} />
                         <Route path="contact" element={<Contact />} />
                         <Route path="auth" element={<Authentication />} />
                         <Route path="checkout" element={<Checkout />} />
@@ -36,7 +36,7 @@ const App = () => {
                 {matches && (
                     <Route path="/" element={<NavigationMobile />}>
                         <Route index element={<Home />} />
-                        <Route path="shop" element={<Shop />} />
+                        <Route path="shop/*" element={<Shop />} />
                         <Route path="contact" element={<Contact />} />
                         <Route path="auth" element={<Authentication />} />
                         <Route path="checkout" element={<Checkout />} />

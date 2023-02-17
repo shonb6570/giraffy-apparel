@@ -3,7 +3,7 @@
 @import "../../mixins.scss";
 
 .category-bg-element,
-.category-container,
+.category-wrapper,
 .category-img,
 span {
     transition: all 0.5s ease-out;
@@ -18,13 +18,13 @@ span {
         flex-direction: row;
     }
 }
-.category-container {
+.category-wrapper {
     width: 100%;
     height: auto;
     z-index: 0;
 }
 
-.category-container:first-of-type {
+.category-wrapper:first-of-type {
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,7 +83,7 @@ span {
     }
 }
 
-.category-container:nth-child(2) {
+.category-wrapper:nth-child(2) {
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
@@ -144,7 +144,7 @@ span {
     }
 }
 
-.category-container:nth-child(3) {
+.category-wrapper:nth-child(3) {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,7 +197,7 @@ span {
     }
 }
 
-.category-container:nth-child(4) {
+.category-wrapper:nth-child(4) {
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
@@ -264,7 +264,7 @@ span {
     }
 }
 
-.category-container:nth-child(5) {
+.category-wrapper:nth-child(5) {
     display: flex;
     align-items: center;
     margin-top: 160px;

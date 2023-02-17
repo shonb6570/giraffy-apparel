@@ -3,7 +3,7 @@ import "./category-item.styles.scss";
 const CategoryItem = ({ category }) => {
     const { imageUrl, title, copyOne, copyTwo, copyThree, copyFour } = category;
     return (
-        <div className="category-container">
+        <div className="category-wrapper">
             <div className="category-bg-element">
                 <div
                     className="category-img"
@@ -19,7 +19,9 @@ const CategoryItem = ({ category }) => {
                         <span>{copyFour}</span>
                     </div>
                     <div className="cta">
-                        <a className="boxy" href={imageUrl}>
+                        <a
+                            className="boxy"
+                            href={`http://localhost:3000/shop/${title}`}>
                             Shop Now
                         </a>
                     </div>

@@ -58,11 +58,6 @@ const NavigationMobile = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/contact">
-                                    Contact
-                                </Link>
-                            </li>
-                            <li>
                                 {currentUser ? (
                                     <Link
                                         className="nav-link"
