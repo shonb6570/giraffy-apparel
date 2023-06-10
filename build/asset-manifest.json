@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.86f15e1c.css",
+    "main.js": "/static/js/main.983dcae9.js",
+    "static/media/Avenir-Book.ttf": "/static/media/Avenir-Book.f3443d085a4785c7b05f.ttf",
+    "static/media/Avenir-Medium.ttf": "/static/media/Avenir-Medium.a11c4a4fed4a9555d79c.ttf",
+    "static/media/Avenir-Book.woff": "/static/media/Avenir-Book.05b311142b368ac10e74.woff",
+    "static/media/Avenir-Medium.woff": "/static/media/Avenir-Medium.3cceca82778395ea8ccc.woff",
+    "static/media/AbrilFatface-Regular.ttf": "/static/media/AbrilFatface-Regular.c2459f7f69cb5eb788d8.ttf",
+    "static/media/Avenir-Book.woff2": "/static/media/Avenir-Book.a241fb31de9163a1d60b.woff2",
+    "static/media/Avenir-Medium.woff2": "/static/media/Avenir-Medium.91ca83b63548f8293b36.woff2",
+    "static/media/giraffy-icon.svg": "/static/media/giraffy-icon.0e2417664d37940ab620.svg",
+    "static/media/bg-el.svg": "/static/media/bg-el.e64af70c683cf44ee7be.svg",
+    "static/media/logo.svg": "/static/media/logo.97f804a1deacdecee107105be731cbce.svg",
+    "static/media/asset-22.svg": "/static/media/asset-22.d35a821f3a9ddb064b1f.svg",
+    "static/media/asset3.svg": "/static/media/asset3.88f95931395e0b8271c0.svg",
+    "static/media/footer-logo.svg": "/static/media/footer-logo.f57b3b71246877258fd1.svg",
+    "static/media/shopping-bag.svg": "/static/media/shopping-bag.aaa1131a3c3672506e9236bf56daf290.svg",
+    "static/media/sign-up-bg-img.svg": "/static/media/sign-up-bg-img.1dcbf3bf2296187e60f5.svg",
+    "static/media/twitter.svg": "/static/media/twitter.ae185f90842272bffe84.svg",
+    "static/media/bg-el-5.svg": "/static/media/bg-el-5.a3b71651eba1ac8ca58e.svg",
+    "static/media/bg-el-1.svg": "/static/media/bg-el-1.b7b44c4977f18cda80d0.svg",
+    "static/media/footer-bg-img.svg": "/static/media/footer-bg-img.8c0929882c35cea64c87.svg",
+    "index.html": "/index.html",
+    "static/media/nav-right-stripes.svg": "/static/media/nav-right-stripes.b8db3ecfa37ecdedb74f.svg",
+    "static/media/nav-left-stripes.svg": "/static/media/nav-left-stripes.3ec7a129e4c3e601ad84.svg",
+    "static/media/bg-el-4.svg": "/static/media/bg-el-4.3737413929b693a371d9.svg",
+    "main.86f15e1c.css.map": "/static/css/main.86f15e1c.css.map",
+    "main.983dcae9.js.map": "/static/js/main.983dcae9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86f15e1c.css",
+    "static/js/main.983dcae9.js"
+  ]
+}
