@@ -1,7 +1,15 @@
+@import "../../../variables.scss";
+
 .category-container {
-    display: grid !important;
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 20px;
+  row-gap: 50px;
+  margin-bottom: 280px !important;
+  @media only screen and (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (min-width: $desktop-sm) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
-    row-gap: 50px;
-    margin-bottom: 280px !important;
+  }
 }

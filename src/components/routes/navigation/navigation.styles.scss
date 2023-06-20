@@ -7,112 +7,112 @@
 @import "../../../mixins.scss";
 
 .navigation {
-    display: none;
+  display: none;
 
-    @include for-size(desktop) {
-        display: flex;
-        margin: 0 auto;
-        align-items: center;
-        max-width: 1600px;
-        height: 300px;
-        justify-content: center;
-        box-sizing: border-box;
-        padding: 0 15px;
-    }
-}
-.nav-bar-wrapper {
-    width: 100%;
-    position: absolute;
-    z-index: 1;
+  @include for-size(desktop) {
     display: flex;
+    margin: 0 auto;
     align-items: center;
     max-width: 1600px;
-    align-items: center;
-    flex-direction: row;
-    @include for-size(desktop) {
-        box-sizing: border-box;
-        padding: 0 15px;
-    }
+    height: 300px;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+}
+.nav-bar-wrapper {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  align-items: center;
+  flex-direction: row;
+  @include for-size(desktop) {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
 }
 
 .nav-borders {
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 37px;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 37px;
 }
 
 .nav-border-right {
-    width: 100%;
-    display: flex;
-    margin-left: 4rem;
+  width: 100%;
+  display: flex;
+  margin-left: 4rem;
 }
 
 .nav-border-left {
-    margin-right: 0rem;
+  margin-right: 0rem;
 }
 
 .logo {
-    margin: 0 auto;
-    width: 300px;
-    @media only screen and (min-width: $desktop-sm) {
-        margin-left: 0;
-    }
+  margin: 0 auto;
+  width: 300px;
+  @media only screen and (min-width: $desktop-sm) {
+    margin-left: 0;
+  }
 }
 
 .nav-links-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+
+  ul {
     display: flex;
-    margin-left: auto;
-    margin-right: 0;
+    justify-content: space-between;
+    margin: auto 0 auto auto;
+    justify-content: center;
 
-    ul {
-        display: flex;
-        justify-content: space-between;
-        margin: auto 0 auto auto;
-        justify-content: center;
-
-        li {
-            list-style: none;
-            height: fit-content;
-            margin: auto 0;
-            min-width: 75px;
-        }
+    li {
+      list-style: none;
+      height: fit-content;
+      margin: auto 0;
+      min-width: 75px;
     }
+  }
 }
 
 .nav-link {
-    display: inline-flex;
-    padding: 0 0.8rem;
-    text-decoration: none;
-    font-family: $font-primary;
-    color: $black;
-    @media only screen and (min-width: $desktop-sm) {
-        font-size: 0.95rem;
-    }
-    @media only screen and (min-width: $desktop-med) {
-        font-size: 1.2rem;
-    }
-    @media only screen and (min-width: $desktop-xl) {
-        font-size: 1.3rem;
-    }
+  display: inline-flex;
+  padding: 0 0.8rem;
+  text-decoration: none;
+  font-family: $font-primary;
+  color: $black;
+  @media only screen and (min-width: $desktop-sm) {
+    font-size: 0.95rem;
+  }
+  @media only screen and (min-width: $desktop-med) {
+    font-size: 1.2rem;
+  }
+  @media only screen and (min-width: $desktop-xl) {
+    font-size: 1.3rem;
+  }
 }
 
 .nav-stripes-right {
-    background-image: url(../../../assets/nav-right-stripes.svg);
-    width: 220px;
-    height: 200px;
-    margin: -25px 0px 0 auto;
-    background-repeat: no-repeat;
+  background-image: url(../../../assets/nav-right-stripes.svg);
+  width: 220px;
+  height: 200px;
+  margin: -25px 0px 0 auto;
+  background-repeat: no-repeat;
 }
 
 .nav-stripes-left {
-    display: block;
-    background-image: url(../../../assets/nav-left-stripes.svg);
-    width: 220px;
-    height: 200px;
-    margin: -25px auto 0 0px;
-    background-repeat: no-repeat;
+  display: block;
+  background-image: url(../../../assets/nav-left-stripes.svg);
+  width: 220px;
+  height: 200px;
+  margin: -25px auto 0 0px;
+  background-repeat: no-repeat;
 }
